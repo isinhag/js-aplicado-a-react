@@ -17,7 +17,8 @@
 
 
     //1ª Digitação (aqui) 
-
+    const bandas = ['Metalica', 'Guns n Roses', 'RHPC', 'Deep Purple'];
+    const maisbandas = [...bandas,'Charlie Brown Jr', 'Mega Death'];
 
 
     exibirNaTela(maisbandas);
@@ -29,8 +30,22 @@
 
 
     //2ª Digitação (aqui) 
+    const dados = {
+      nome: 'Viviane',
+      idade: 21
+    };
 
+    const novosDados = {
+      ...dados,
+      cidade: 'São Paulo',
+      estado: 'SP',
+      idade: 21 //sobrescrevendo o valor somente da idade 
+    };
 
+    exibirNaTela(dados)
+    exibirNaTela(novosDados)
+    exibirNaTela(novosDados.idade)
+    
 
     function exibirNaTela(texto) {
       // Exibe a mensagem no console do navegador

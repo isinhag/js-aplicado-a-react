@@ -13,16 +13,21 @@
 
 
     //1ª Digitação (aqui)
+    
+      import { pessoa, curso as treinamento }
+      from "./modulos/pessoa.js";
+
+      exibirNaTela(pessoa.nome);
+      exibirNaTela(treinamento.titulo);
 
 
-
-    function exibirNaTela(texto) {
+      function exibirNaTela(texto) {
       // Exibe a mensagem no console do navegador
       console.log(texto);
 
       // Exibe a mensagem na tela da página
       document.getElementById('output').innerHTML += texto + '<br>';
-    }
-  </script>
+      }
+    </script>
 </body>
 </html>

@@ -13,7 +13,15 @@
 
 
     //1ª Digitação (aqui) 
+    // Função sintaxe tradicional 
+    function nomeDaFuncao() {
+      exibirNaTela('Função de sintaxe tradicional...')
+    }
 
+    // Função anônima 
+    var outraFuncao = function() {
+      exibirNaTela('Outra forma de declarar função...')
+    }
 
 
     // Chamada da função
@@ -29,8 +37,11 @@
 
 
     //2ª Digitação (aqui) 
+    function exercicio(valor1, valor2) {
+      return valor1 - valor2;
+    }
 
-
+    let resultado = exercicio(10,3)
 
     exibirNaTela(resultado);
 
@@ -69,8 +80,11 @@
     
 
     //3ª Digitação (aqui) 
+    let converterMaiuscula = nome => nome.toUpperCase();
 
-
+    exibirNaTela(converterMaiuscula('Isabela'));
+    exibirNaTela(converterMaiuscula('Esther'));
+    exibirNaTela(converterMaiuscula('Lívia'));
 
     function exibirNaTela(texto) {
       // Exibe a mensagem no console do navegador
