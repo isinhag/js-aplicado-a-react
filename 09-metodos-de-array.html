@@ -159,8 +159,8 @@
 
     const somaCursosMobile = cursos
       .filter(curso => curso.categoria == 'Mobile')
-      .reduce((acumulador, curso) => {
-        return acumulador + curso.preco
+      .reduce((i, curso) => {
+        return i + curso.preco
       }, 0) // Valor inicial para o reduce
 
       
