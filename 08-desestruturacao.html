@@ -24,8 +24,13 @@
 
 
     //1ª Digitação (aqui) 
+    const alunos = ['Maria', 'Lucia', 'Kaio'];
+    const [maria, lucia, kaio] = alunos;
 
-
+    exibirNaTela(maria);
+    exibirNaTela(lucia);
+    exibirNaTela(kaio);
+   
 
     // _________________________
     exibirNaTela('======================');
@@ -45,9 +50,16 @@
     
 
      //2ª Digitação (aqui) 
+    const {nome, cidade} = {nome:'Fulano', idade:18, cidade:'São Paulo'};
+    exibirNaTela(nome);
+    exibirNaTela(cidade);
+    exibirNaTela(smp);
 
-
-
+    const dados = {
+      nome:'Guilerme', 
+      curso:'JavaScript',
+      nascimento:'31/10/1998'
+    };
 
     exibirNaTela('======================');
 
